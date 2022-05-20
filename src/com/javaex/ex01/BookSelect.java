@@ -20,7 +20,7 @@ public class BookSelect {
 			
 			String query = "";
 			query += "select ";
-			query += "book_id, title, pubs, pub_date, author_id ";
+			query += "book_id, title, pubs, to_char(pub_date, 'yyyy-mm-dd'), author_id ";
 			query += "from book ";
 			System.out.println(query);
 			
