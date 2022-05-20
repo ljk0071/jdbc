@@ -9,7 +9,6 @@ import java.sql.SQLException;
 public class AuthorInsert {
 
 	public static void main(String[] args) {
-		// 0. 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
