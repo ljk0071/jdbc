@@ -3,7 +3,6 @@ package com.javaex.ex01;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AuthorInsert {
@@ -11,7 +10,6 @@ public class AuthorInsert {
 	public static void main(String[] args) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		ResultSet rs = null;
 
 		try {
 		    // 1. JDBC 드라이버 (Oracle) 로딩
@@ -47,9 +45,6 @@ public class AuthorInsert {
 		   
 		    // 5. 자원정리
 		    try {
-		        if (rs != null) {
-		            rs.close();
-		        }                
 		        if (pstmt != null) {
 		            pstmt.close();
 		        }

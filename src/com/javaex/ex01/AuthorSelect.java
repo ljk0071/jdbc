@@ -56,7 +56,6 @@ public class AuthorSelect {
 				System.out.println("error:" +e);
 			}
 		}
-		
 	}
 }
 
