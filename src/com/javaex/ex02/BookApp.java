@@ -6,9 +6,8 @@ public class BookApp {
 		
 		BookVo bookvo = new BookVo("자서전", "사당", "2020/01/02", 1);
 		BookDao bookdao = new BookDao();
-		bookdao.Insert(bookvo);
 		System.out.println(bookdao.Select());
-		bookdao.Search("방배");
+		bookdao.Search("사");
 		
 	}
 
