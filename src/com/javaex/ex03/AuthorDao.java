@@ -489,7 +489,7 @@ public class AuthorDao {
 				authorList.add(authorVo);
 			}
 			for(int i=0;i<authorList.size();i++) {
-				if (authorList.get(i).toString().contains(num)) {
+				if (authorList.get(i).toString().contains(str)) {
 					System.out.println(authorList.get(i).toString());
 				}
 			}
